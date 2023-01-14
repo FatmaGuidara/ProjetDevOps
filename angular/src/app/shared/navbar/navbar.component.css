@@ -1,0 +1,16 @@
+.active{
+    color:#276b86 !important;
+    font-weight: bold;
+}
+body {
+    padding-top: 70px;
+}
+.navbar.navbar-inverse {
+    border: none;
+}
+.navbar .navbar-brand {
+    padding-top: 0px;
+}
+.navbar .navbar-brand img {
+    height: 50px;
+}

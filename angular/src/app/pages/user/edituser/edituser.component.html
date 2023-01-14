@@ -1,0 +1,56 @@
+<form [formGroup]="editForm" (ngSubmit)="handleEdit()">
+    <div class="row">
+        <div class="mb-3">
+            <input class="form-control" placeholder="name" formControlName="name" >
+            <!-- <p>{{editForm.controls?.['name']?.['errors']|json}}</p> -->
+            <div *ngIf="name?.['invalid'] && (name?.['dirty'] || name?.['touched'])" class="alert alert-danger">
+                <span *ngIf="name?.['errors']?.['required']">Name is required</span>
+                <span *ngIf="name?.['errors']?.['minlength']">Name must be more than 3 characters</span>
+                <span *ngIf="name?.['errors']?.['maxlength']">Name must be less than 20 characters</span>
+            </div>
+            <div class="alert alert-danger" *ngIf="errMsg.name">{{errMsg.name}}</div>
+        </div>
+
+        <div class="mb-3">
+            <input class="form-control" placeholder="email" formControlName="email" >
+            <div *ngIf="email?.['invalid'] && (email?.['dirty'] || email?.['touched'])" class="alert alert-danger">
+                <span *ngIf="email?.['errors']?.['required']">email is required</span>
+                <span *ngIf="email?.['errors']?.['email']">wrong formula of email</span>
+            </div>
+            <div class="alert alert-danger" *ngIf="errMsg.email">{{errMsg.email}}</div>
+        </div>
+
+        <div class="mb-3">
+            <input class="form-control" placeholder="age" formControlName="age">
+            <div *ngIf="age?.['invalid'] && (age?.['dirty'] || age?.['touched'])" class="alert alert-danger">
+                <span *ngIf="age?.['errors']?.['required']">Age is required</span>
+                <span *ngIf="age?.['errors']?.['min']">Age must be greater than 20</span>
+                <span *ngIf="age?.['errors']?.['max']">Age must be less than 65</span>
+            </div>
+            <div class="alert alert-danger" *ngIf="errMsg.age">{{errMsg.age}}</div>
+        </div>
+
+        <div class="mb-3">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="gender" value="male" formControlName="gender">
+                Male
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="gender" value="female" formControlName="gender">
+                Female
+            </div>
+            <div *ngIf="gender?.['invalid'] && (gender?.['dirty'] || gender?.['touched'])" class="alert alert-danger">
+                <span *ngIf="gender?.['errors']?.['required']">gender is required</span>
+            </div>
+            <div class="alert alert-danger" *ngIf="errMsg.gender">{{errMsg.gender}}</div>
+        </div>
+
+        <div class="mb-3">
+            <input type="file" class="form-control" name="myImg" (change)="onChangeImg($event)">
+        </div>
+
+        <div class="mb-3">
+            <button class="btn btn-success">Save</button>
+        </div>
+    </div>
+</form>

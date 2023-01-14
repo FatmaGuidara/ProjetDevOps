@@ -1,0 +1,8 @@
+users => id, name, email, password, age
+- routes: register(add/create), login, logout, profile, viewSingle, edit, del, getAll
+
+products => id, title, desc., img, price, categoryId, userId 
+- routes: add, del, edit, update, viewSingle, viewAll
+
+categories => id, title, desc., img
+- routes: add, del, edit, update, viewSingle, viewAll

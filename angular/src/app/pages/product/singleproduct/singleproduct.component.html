@@ -1,0 +1,27 @@
+<div class="row d-flex justify-content-center text-center" *ngIf="isLoaded && errMsg == ''">
+    <div class="col-8">
+        <div class="border border-1 m-3 my-5 card">
+            <img [src]="imgUrl+product.productImg" class="img-fluid card-img-top">
+            <div class="card-body">
+                <h5 class="card-title mb-3">{{product?.title}}</h5>
+                <p class="card-subtitle mb-3 text-muted">{{product?.desc}}</p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item" *ngIf="product.categoryId"><strong>Category: </strong>{{product.categoryId.name}}</li>
+                <li class="list-group-item">
+                    <span class="price-symbol">EGP</span>
+                    <span class="price-whole">{{product.price}}</span></li>
+            </ul>
+              <div class="card-body" *ngIf="_auth.isLoggedin">
+                <button routerLink="/product/single/edit/{{product?._id}}" class="card-link btn btn-success">Edit</button>
+                <button routerLink="/product/single/delete/{{product?._id}}" class="card-link btn btn-danger">Delete</button>
+              </div>
+        </div>
+    </div>
+</div>
+<div class="alert alert-warning" *ngIf="!isLoaded && errMsg == ''"> 
+    Loading Now ...
+</div>
+<div class="alert alert-danger" *ngIf="isLoaded && errMsg != ''">
+    {{errMsg}}
+</div>

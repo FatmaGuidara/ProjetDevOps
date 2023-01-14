@@ -1,0 +1,6 @@
+<div class="alert alert-warning" *ngIf="!isLoaded && errMsg == ''"> 
+    Deleting Account ...
+</div>
+<div class="alert alert-danger" *ngIf="isLoaded && errMsg != ''">
+    {{errMsg}}
+</div>

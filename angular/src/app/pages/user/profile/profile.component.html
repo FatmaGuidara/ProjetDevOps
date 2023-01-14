@@ -1,0 +1,26 @@
+<div class="card mb-3 p-3" style="max-width: 700px;" *ngIf="isLoaded && errMsg == ''">
+    <div class="row g-0">
+      <div class="col-md-6">
+        <img [src]="imgUrl+profile.userImg" class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-md-6 mt-4">
+        <div class="card-body">
+          <h5 class="card-title mb-3">{{profile.name}}</h5>
+          <p class="card-subtitle mb-3 text-muted">{{profile.email}}</p>
+          <p class="card-text mb-3"><strong>Age: </strong>{{profile.age}}</p>
+          <p class="card-text mb-3"><strong>Gender: </strong> {{profile.gender}}</p>
+        </div>
+        <div class="card-body">
+            <button routerLink="/user/single/edit/{{profile._id}}" class="card-link btn btn-warning">Edit</button>
+            <button routerLink="/user/single/delete/{{profile._id}}" class="card-link btn btn-danger">Delete Account</button>
+          </div>
+      </div>
+    </div>
+</div>
+
+<div class="alert alert-warning" *ngIf="!isLoaded && errMsg == ''"> 
+    Loading Now ...
+</div>
+<div class="alert alert-danger" *ngIf="isLoaded && errMsg != ''">
+    {{errMsg}}
+</div>

@@ -1,0 +1,9 @@
+.price-symbol{
+    top: -0.4em;
+    font-size: 12px;
+    position: relative;
+}
+
+.price-whole{
+    font-size: 19px;
+}

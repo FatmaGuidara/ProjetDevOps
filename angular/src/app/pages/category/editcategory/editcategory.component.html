@@ -1,0 +1,18 @@
+<form [formGroup]="editForm" (ngSubmit)="handleEdit()">
+    <div class="row">
+        <div class="mb-3">
+            <input class="form-control" placeholder="name" formControlName="name">
+            <div *ngIf="name?.['invalid'] && (name?.['dirty'] || name?.['touched'])" class="alert alert-danger">
+                <span *ngIf="name?.['errors']?.['required']">name is required</span>
+            </div>
+            <div class="alert alert-danger" *ngIf="errMsg.name">{{errMsg.name}}</div>
+        </div>
+
+        <div class="mb-3">
+            <input type="file" class="form-control" name="categoryImg" (change)="onChangeImg($event)">
+        </div>
+        <div class="mb-3">
+            <button class="btn btn-success">Edit</button>
+        </div>
+    </div>
+</form>

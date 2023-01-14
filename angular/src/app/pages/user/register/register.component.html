@@ -1,0 +1,61 @@
+<form [formGroup]="registerForm" (ngSubmit)="handleRegister()">
+    <div class="row">
+        <div class="mb-3">
+            <input class="form-control" placeholder="name" formControlName="name" >
+            <div *ngIf="name?.['invalid'] && (name?.['dirty'] || name?.['touched'])" class="alert alert-danger">
+                <span *ngIf="name?.['errors']?.['required']">Name is required</span>
+                <span *ngIf="name?.['errors']?.['minlength']">Name must be more than 3 characters</span>
+                <span *ngIf="name?.['errors']?.['maxlength']">Name must be less than 20 characters</span>
+            </div>
+            <div class="alert alert-danger" *ngIf="errMsg.name">{{errMsg.name}}</div>
+        </div>
+
+        <div class="mb-3">
+            <input class="form-control" placeholder="email" formControlName="email" >
+            <div *ngIf="email?.['invalid'] && (email?.['dirty'] || email?.['touched'])" class="alert alert-danger">
+                <span *ngIf="email?.['errors']?.['required']">email is required</span>
+                <span *ngIf="email?.['errors']?.['email']">wrong formula of email</span>
+            </div>
+            <div class="alert alert-danger" *ngIf="errMsg.email">{{errMsg.email}}</div>
+        </div>
+
+        <div class="mb-3">
+            <input class="form-control" placeholder="password" formControlName="password" type="password">
+            <div *ngIf="password?.['invalid'] && (password?.['dirty'] || password?.['touched'])" class="alert alert-danger">
+                <span *ngIf="password?.['errors']?.['required']">password is required</span>
+                <!-- <span *ngIf="password?.['errors']?.['pattern']">Weak password "at least one number, one uppercase, lowercase letter, one Special Symbol and at least 8 or more characters"</span> -->
+                <!-- Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters -->
+            </div>
+            <div class="alert alert-danger" *ngIf="errMsg.password">{{errMsg.password}}</div>
+        </div>
+
+        <div class="mb-3">
+            <input class="form-control" placeholder="age" formControlName="age">
+            <div *ngIf="age?.['invalid'] && (age?.['dirty'] || age?.['touched'])" class="alert alert-danger">
+                <span *ngIf="age?.['errors']?.['required']">Age is required</span>
+                <span *ngIf="age?.['errors']?.['min']">Age must be greater than 20</span>
+                <span *ngIf="age?.['errors']?.['max']">Age must be less than 65</span>
+            </div>
+            <div class="alert alert-danger" *ngIf="errMsg.age">{{errMsg.age}}</div>
+        </div>
+
+        <div class="mb-3">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="gender" value="male" formControlName="gender">
+                Male
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="gender" value="female" formControlName="gender">
+                Female
+            </div>
+            <div *ngIf="gender?.['invalid'] && (gender?.['dirty'] || gender?.['touched'])" class="alert alert-danger">
+                <span *ngIf="gender?.['errors']?.['required']">gender is required</span>
+            </div>
+            <div class="alert alert-danger" *ngIf="errMsg.gender">{{errMsg.gender}}</div>
+        </div>
+
+        <div class="mb-3">
+            <button class="btn btn-primary">Register</button>
+        </div>
+    </div>
+</form>
