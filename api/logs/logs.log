@@ -1,0 +1,35 @@
+{"level":"info","message":"get all products","route":"/product","timestamp":"2023-01-14T23:20:39.479Z"}
+{"level":"info","message":"get all products","route":"/product","timestamp":"2023-01-14T23:20:39.594Z"}
+{"level":"info","message":"get all products","route":"/product","timestamp":"2023-01-14T23:20:39.762Z"}
+{"client_ip":"::1","level":"info","message":"get all products","route":"/product","timestamp":"2023-01-14T23:20:39.843Z"}
+{"client_ip":"::1","level":"info","message":"server Checked","request_id":"a76e9ea2-a764-4dd8-b7cf-c3d3ad1b2347","route":"/","timestamp":"2023-01-14T23:20:42.875Z"}
+{"client_ip":"::1","level":"info","message":"server Checked","request_id":"63a385f4-9516-40bb-a1b6-241dae90d5e2","route":"/","timestamp":"2023-01-14T23:22:29.233Z"}
+{"client_ip":"::1","level":"info","message":"server Checked","request_id":"73bf549e-e006-43c1-8f59-61e72ab523ef","route":"/","timestamp":"2023-01-14T23:22:29.580Z"}
+{"client_ip":"::1","level":"info","message":"get all products","route":"/product","timestamp":"2023-01-14T23:22:34.008Z"}
+{"client_ip":"::1","level":"error","message":"error while adding a product","route":"/product","timestamp":"2023-01-14T23:31:24.381Z"}
+{"client_ip":"::1","level":"error","message":"error while adding a product","route":"/product","timestamp":"2023-01-14T23:31:31.427Z"}
+{"client_ip":"::1","level":"info","message":"add a product","route":"/product","timestamp":"2023-01-14T23:31:35.425Z"}
+{"client_ip":"::1","level":"info","message":"Get my products","route":"/product","timestamp":"2023-01-14T23:31:35.797Z"}
+{"client_ip":"::1","level":"info","message":"server Checked","request_id":"0b8e6a6f-f2a2-4430-a0f1-f09fc4113149","route":"/","timestamp":"2023-01-14T23:47:19.933Z"}
+{"client_ip":"::1","level":"info","message":"Delete a product","route":"/product","timestamp":"2023-01-14T23:47:39.088Z"}
+{"client_ip":"::1","level":"info","message":"Get my products","route":"/product","timestamp":"2023-01-14T23:47:39.423Z"}
+{"client_ip":"::1","level":"info","message":"Delete a product","route":"/product","timestamp":"2023-01-14T23:47:42.729Z"}
+{"client_ip":"::1","level":"info","message":"Get my products","route":"/product","timestamp":"2023-01-14T23:47:43.038Z"}
+{"client_ip":"::1","level":"info","message":"GET all categories","route":"/category","timestamp":"2023-01-14T23:47:46.379Z"}
+{"client_ip":"::1","level":"error","message":"error while adding a product","route":"/product","timestamp":"2023-01-14T23:47:49.296Z"}
+{"client_ip":"::1","level":"info","message":"add a product","route":"/product","timestamp":"2023-01-14T23:47:56.868Z"}
+{"client_ip":"::1","level":"info","message":"Get my products","route":"/product","timestamp":"2023-01-14T23:47:57.180Z"}
+{"client_ip":"::1","level":"info","message":"get all products","route":"/product","timestamp":"2023-01-14T23:48:13.478Z"}
+{"client_ip":"::1","level":"info","message":"get a product","route":"/product","timestamp":"2023-01-14T23:48:16.347Z"}
+{"client_ip":"::1","level":"info","message":"GET all categories","route":"/category","timestamp":"2023-01-14T23:48:18.839Z"}
+{"client_ip":"::1","level":"info","message":"get a product","route":"/product","timestamp":"2023-01-14T23:48:18.928Z"}
+{"client_ip":"::1","level":"info","message":"edit a product","route":"/product","timestamp":"2023-01-14T23:48:29.328Z"}
+{"client_ip":"::1","level":"info","message":"get a product","route":"/product","timestamp":"2023-01-14T23:48:29.557Z"}
+{"client_ip":"::1","level":"info","message":"Image uploaded successfully","route":"/product","timestamp":"2023-01-14T23:48:29.757Z"}
+{"client_ip":"::1","level":"info","message":"get all products","route":"/product","timestamp":"2023-01-14T23:48:33.417Z"}
+{"client_ip":"::1","level":"info","message":"GET all categories","route":"/category","timestamp":"2023-01-14T23:48:37.140Z"}
+{"client_ip":"::1","level":"info","message":"GET all categories","route":"/category","timestamp":"2023-01-14T23:48:38.188Z"}
+{"client_ip":"::1","level":"info","message":"get all products","route":"/product","timestamp":"2023-01-14T23:48:41.569Z"}
+{"client_ip":"::1","level":"info","message":"get a product","route":"/product","timestamp":"2023-01-14T23:48:48.257Z"}
+{"client_ip":"::1","level":"info","message":"Delete a product","route":"/product","timestamp":"2023-01-14T23:48:50.217Z"}
+{"client_ip":"::1","level":"info","message":"Get my products","route":"/product","timestamp":"2023-01-14T23:48:50.538Z"}

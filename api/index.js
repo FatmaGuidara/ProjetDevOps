@@ -1,23 +1,13 @@
 require('dotenv').config()
 const PORT = process.env.PORT || 5000
 const app = require("./app/app")
-
-// const client = require('prom-client');
-// const register = new client.Registry();
-// const collectDefaultMetrics = client.collectDefaultMetrics;
-// collectDefaultMetrics({ register });
-
-// // Counter of number of requests 
-// const numberOfRequestsCounter = new client.Counter({
-//     name: 'number_of_requests',
-//     help: 'counts the number of requests that the fact endpoint recieved',
-//     labelNames: ['status', 'route'],
-// });
-// register.registerMetric(numberOfRequestsCounter)
-
+const uuid = require('uuid');
 
 const client = require('prom-client');
 const {requestCounter} = require('./metrics')
+
+const {logger} = require('./logger')
+
 
 app.get('/metrics', async (req, res) => {
     try{
@@ -27,6 +17,14 @@ app.get('/metrics', async (req, res) => {
 
     }
 })
+
+
+// middleware to log the user's IP address and request ID
+app.use((req, res, next) => {
+    logger.info(`server Checked`,{ client_ip: `${req.ip}`, request_id: uuid.v4(), route: '/'});
+    next();
+});
+
 
 app.get('/', (req, res) => {
     try{
@@ -38,4 +36,6 @@ app.get('/', (req, res) => {
     }
 })
 
-app.listen(PORT, ()=>console.log(`http://localhost:${PORT}`))
+
+
+app.listen(PORT, ()=>console.log(`http://localhost:${PORT}`))   
