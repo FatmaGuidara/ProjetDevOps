@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class AuthService {
 
-  baseUrl = "http://localhost:5000/user/"
+  baseUrl = "http://20.101.205.135:5000/api/user/"
   public userData = null
   public isLoggedin = false
 

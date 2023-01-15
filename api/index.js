@@ -26,7 +26,7 @@ app.use((req, res, next) => {
 });
 
 
-app.get('/', (req, res) => {
+app.get('/api', (req, res) => {
     try{
         requestCounter.inc({'route': '/', 'path': '', 'status': 200, 'method': 'get'})
         res.send('Server running');
@@ -38,4 +38,4 @@ app.get('/', (req, res) => {
 
 
 
-app.listen(PORT, ()=>console.log(`http://localhost:${PORT}`))   
+app.listen(PORT, ()=>console.log(`http://20.101.205.135:5000/api:${PORT}`))   

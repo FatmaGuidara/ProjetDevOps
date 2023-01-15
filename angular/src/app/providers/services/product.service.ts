@@ -8,7 +8,7 @@ import { Product } from 'src/app/models/product';
 })
 export class ProductService {
 
-  baseUrl = "http://localhost:5000/product/"
+  baseUrl = "http://20.101.205.135:5000/api/product/"
 
   constructor(private _http:HttpClient) { }
 

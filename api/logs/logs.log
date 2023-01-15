@@ -33,3 +33,52 @@
 {"client_ip":"::1","level":"info","message":"get a product","route":"/product","timestamp":"2023-01-14T23:48:48.257Z"}
 {"client_ip":"::1","level":"info","message":"Delete a product","route":"/product","timestamp":"2023-01-14T23:48:50.217Z"}
 {"client_ip":"::1","level":"info","message":"Get my products","route":"/product","timestamp":"2023-01-14T23:48:50.538Z"}
+{"client_ip":"::1","level":"info","message":"user's profile","route":"/user","timestamp":"2023-01-15T08:49:45.148Z"}
+{"client_ip":"::1","level":"info","message":"Get my products","route":"/product","timestamp":"2023-01-15T08:49:45.579Z"}
+{"client_ip":"::1","level":"info","message":"user's profile","route":"/user","timestamp":"2023-01-15T08:51:49.973Z"}
+{"client_ip":"::1","level":"info","message":"Get my products","route":"/product","timestamp":"2023-01-15T08:51:53.382Z"}
+{"client_ip":"::1","level":"info","message":"get all products","route":"/product","timestamp":"2023-01-15T08:51:56.991Z"}
+{"client_ip":"::1","level":"info","message":"get a product","route":"/product","timestamp":"2023-01-15T08:52:00.465Z"}
+{"client_ip":"::1","level":"info","message":"GET all categories","route":"/category","timestamp":"2023-01-15T08:52:07.111Z"}
+{"client_ip":"::1","level":"info","message":"get all products","route":"/product","timestamp":"2023-01-15T08:52:09.051Z"}
+{"client_ip":"::1","level":"info","message":"user's profile","route":"/user","timestamp":"2023-01-15T08:52:25.497Z"}
+{"client_ip":"::1","level":"info","message":"Get my products","route":"/product","timestamp":"2023-01-15T08:52:32.211Z"}
+{"client_ip":"::1","level":"info","message":"user's profile","route":"/user","timestamp":"2023-01-15T08:54:09.451Z"}
+{"client_ip":"::1","level":"info","message":"Get my products","route":"/product","timestamp":"2023-01-15T08:54:10.104Z"}
+{"client_ip":"::1","level":"info","message":"GET all categories","route":"/category","timestamp":"2023-01-15T08:54:24.701Z"}
+{"client_ip":"::1","level":"info","message":"get a product","route":"/product","timestamp":"2023-01-15T08:54:24.934Z"}
+{"client_ip":"::1","level":"info","message":"edit a product","route":"/product","timestamp":"2023-01-15T08:54:43.383Z"}
+{"client_ip":"::1","level":"info","message":"get a product","route":"/product","timestamp":"2023-01-15T08:54:43.753Z"}
+{"client_ip":"::1","level":"info","message":"Image uploaded successfully","route":"/product","timestamp":"2023-01-15T08:54:43.911Z"}
+{"client_ip":"::1","level":"info","message":"get all products","route":"/product","timestamp":"2023-01-15T08:54:49.492Z"}
+{"client_ip":"::1","level":"info","message":"user's profile","route":"/user","timestamp":"2023-01-15T08:54:55.417Z"}
+{"client_ip":"::1","level":"info","message":"get all products","route":"/product","timestamp":"2023-01-15T08:54:55.522Z"}
+{"client_ip":"::1","level":"info","message":"user's profile","route":"/user","timestamp":"2023-01-15T08:55:06.392Z"}
+{"client_ip":"::1","level":"info","message":"GET all categories","route":"/category","timestamp":"2023-01-15T08:56:20.947Z"}
+{"client_ip":"::1","level":"info","message":"get all products","route":"/product","timestamp":"2023-01-15T08:56:25.195Z"}
+{"client_ip":"::1","level":"info","message":"GET all categories","route":"/category","timestamp":"2023-01-15T08:56:36.922Z"}
+{"client_ip":"::1","level":"info","message":"get a category","route":"/category","timestamp":"2023-01-15T08:57:51.755Z"}
+{"client_ip":"::1","level":"info","message":"edit a category","route":"/category","timestamp":"2023-01-15T08:57:54.473Z"}
+{"client_ip":"::1","level":"info","message":"GET all categories","route":"/category","timestamp":"2023-01-15T08:57:54.602Z"}
+{"client_ip":"::1","level":"info","message":"get a category","route":"/category","timestamp":"2023-01-15T08:57:56.713Z"}
+{"client_ip":"::1","level":"info","message":"edit a category","route":"/category","timestamp":"2023-01-15T08:58:08.642Z"}
+{"client_ip":"::1","level":"info","message":"GET all categories","route":"/category","timestamp":"2023-01-15T08:58:08.833Z"}
+{"client_ip":"::1","level":"info","message":"Uploading image","route":"/category","timestamp":"2023-01-15T08:58:09.053Z"}
+{"client_ip":"::1","level":"info","message":"fetching products","route":"/category","timestamp":"2023-01-15T08:58:12.799Z"}
+{"client_ip":"::1","level":"info","message":"get all products","route":"/product","timestamp":"2023-01-15T08:58:22.623Z"}
+{"client_ip":"::1","level":"info","message":"GET all categories","route":"/category","timestamp":"2023-01-15T08:58:24.172Z"}
+{"client_ip":"::1","level":"info","message":"GET all categories","route":"/category","timestamp":"2023-01-15T08:58:26.042Z"}
+{"client_ip":"::1","level":"info","message":"GET all categories","route":"/category","timestamp":"2023-01-15T08:58:27.372Z"}
+{"client_ip":"::1","level":"info","message":"add a category","route":"/category","timestamp":"2023-01-15T08:59:33.364Z"}
+{"client_ip":"::1","level":"info","message":"GET all categories","route":"/category","timestamp":"2023-01-15T08:59:33.514Z"}
+{"client_ip":"::1","level":"info","message":"user's profile","route":"/user","timestamp":"2023-01-15T08:59:41.672Z"}
+{"client_ip":"::1","level":"info","message":"GET all categories","route":"/category","timestamp":"2023-01-15T08:59:41.723Z"}
+{"client_ip":"::1","level":"info","message":"Logout","route":"/user","timestamp":"2023-01-15T09:00:26.522Z"}
+{"client_ip":"::1","level":"info","message":"login","route":"/user","timestamp":"2023-01-15T09:00:28.963Z"}
+{"client_ip":"::1","level":"info","message":"user's profile","route":"/user","timestamp":"2023-01-15T09:00:29.153Z"}
+{"client_ip":"::1","level":"info","message":"GET all categories","route":"/category","timestamp":"2023-01-15T09:00:32.425Z"}
+{"client_ip":"::1","level":"info","message":"get all products","route":"/product","timestamp":"2023-01-15T09:00:34.787Z"}
+{"client_ip":"::1","level":"info","message":"GET all categories","route":"/category","timestamp":"2023-01-15T09:00:38.502Z"}
+{"client_ip":"::1","level":"info","message":"GET all categories","route":"/category","timestamp":"2023-01-15T09:00:39.434Z"}
+{"client_ip":"::1","level":"info","message":"user's profile","route":"/user","timestamp":"2023-01-15T11:37:54.009Z"}
+{"client_ip":"::1","level":"info","message":"GET all categories","route":"/category","timestamp":"2023-01-15T11:37:54.276Z"}

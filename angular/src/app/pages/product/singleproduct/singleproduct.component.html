@@ -9,7 +9,7 @@
             <ul class="list-group list-group-flush">
                 <li class="list-group-item" *ngIf="product.categoryId"><strong>Category: </strong>{{product.categoryId.name}}</li>
                 <li class="list-group-item">
-                    <span class="price-symbol">EGP</span>
+                    <span class="price-symbol">£</span>
                     <span class="price-whole">{{product.price}}</span></li>
             </ul>
               <div class="card-body" *ngIf="_auth.isLoggedin">
