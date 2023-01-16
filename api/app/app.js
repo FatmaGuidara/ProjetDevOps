@@ -14,8 +14,8 @@ app.use(express.static(staticDir))
 const userRoutes = require("./routes/user.routes")
 const productRoutes = require("./routes/product.routes")
 const categoryRoutes = require("./routes/category.routes")
-app.use("/user", userRoutes)
-app.use("/product", productRoutes)
-app.use("/category", categoryRoutes)
+app.use("/api/user", userRoutes)
+app.use("/api/product", productRoutes)
+app.use("/api/category", categoryRoutes)
 
 module.exports = app

@@ -19,5 +19,13 @@ spec:
       - image: fatmaguidara/api
         imagePullPolicy: Always
         name: api
+
+        env:
+        - name: API-PORT
+          valueFrom:
+            configMapKeyRef:
+              name: my-config
+              key: port
+              
         ports:
         - containerPort: 5000
