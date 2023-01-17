@@ -1,7 +1,0 @@
-apiVersion: v1
-data:
-  port: "4200"
-kind: ConfigMap
-metadata:
-  creationTimestamp: null
-  name: front-config

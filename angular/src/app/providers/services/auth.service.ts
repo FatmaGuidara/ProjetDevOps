@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class AuthService {
 
-  baseUrl = "http://20.71.8.196/api/user/"
+  baseUrl = "http://ecommerce.francecentral.cloudapp.azure.com:5000/api/user/"
   
   public userData = null
   public isLoggedin = false

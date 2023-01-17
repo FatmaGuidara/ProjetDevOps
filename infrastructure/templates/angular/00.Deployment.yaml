@@ -17,7 +17,7 @@ spec:
       containers:
       - name: front
         image: fatmaguidara/front
-        imagePullPolicy: IfNotPresent
+        imagePullPolicy: Always
 
         env:
         - name: FRONT-PORT

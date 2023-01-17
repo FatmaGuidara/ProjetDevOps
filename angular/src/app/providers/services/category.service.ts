@@ -8,7 +8,7 @@ import { Category } from 'src/app/models/category';
 })
 export class CategoryService {
 
-  baseUrl = "http://20.71.8.196/api/category/"
+  baseUrl = "http://ecommerce.francecentral.cloudapp.azure.com:5000/api/category/"
 
   constructor(private _http:HttpClient) { }
 

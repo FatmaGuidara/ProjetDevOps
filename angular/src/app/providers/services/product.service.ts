@@ -8,7 +8,7 @@ import { Product } from 'src/app/models/product';
 })
 export class ProductService {
 
-  baseUrl = "http://20.101.205.135:5000/api/product/"
+  baseUrl = "http://ecommerce.francecentral.cloudapp.azure.com:5000/api/product/"
 
   constructor(private _http:HttpClient) { }
 

@@ -14,6 +14,10 @@ spec:
     metadata:
       labels:
         app: api
+      annotations:
+        prometheus.io/port: "5000"
+        prometheus.io/path: "/metrics"
+        prometheus.io/scrape: "true"
     spec:
       containers:
       - image: fatmaguidara/api

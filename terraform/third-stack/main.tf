@@ -11,7 +11,7 @@ data "terraform_remote_state" "aks" {
 }
 
 
-resource "kubernetes_namespace" "example" {
+data "kubernetes_namespace" "example" {
   metadata {
     annotations = {
       name = "example-annotation"
@@ -20,10 +20,8 @@ resource "kubernetes_namespace" "example" {
   }
 }
 
-resource "helm_release" "example" {
-  name       = "argocdproj"
-  repository = "https://argoproj.github.io/argo-helm"
-  chart      = "argo-cd"
-  namespace  = kubernetes_namespace.example.id
-  verify = false
+resource "helm_release" "my_application" {
+  name = var.release_name
+  chart = var.chart
+  namespace  = data.kubernetes_namespace.example.id
 }
