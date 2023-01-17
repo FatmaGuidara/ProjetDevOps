@@ -1,0 +1,4 @@
+apiVersion: v2
+name: ecommerce
+description: Helm chart for kanban project
+version: 0.1.0

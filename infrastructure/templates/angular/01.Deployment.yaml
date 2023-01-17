@@ -1,0 +1,31 @@
+# apiVersion: apps/v1
+# kind: Deployment
+# metadata:
+#   creationTimestamp: null
+#   labels:
+#     app: front
+#   name: front
+# spec:
+#   replicas: 1
+#   selector:
+#     matchLabels:
+#       app: front
+#   template:
+#     metadata:
+#       labels:
+#         app: front
+#     spec:
+#       containers:
+#       - image: fatmaguidara/front
+#         imagePullPolicy: Always
+#         name: front
+
+#         env:
+#         - name: FRONT-PORT
+#           valueFrom:
+#             configMapKeyRef:
+#               name: front-config
+#               key: port
+
+#         ports:
+#         - containerPort: 4200

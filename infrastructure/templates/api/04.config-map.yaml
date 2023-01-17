@@ -1,0 +1,7 @@
+apiVersion: v1
+data:
+  port: "5000"
+kind: ConfigMap
+metadata:
+  creationTimestamp: null
+  name: my-config

@@ -1,0 +1,15 @@
+deployment:
+  replicas: 1
+
+image:
+  tag: latest
+  apiname: fatmaguidara/api
+  frontname: fatmaguidara/front
+
+http:
+  frontendport: 4200
+  backendport: 5000
+
+labels:
+  app: api
+  env: production

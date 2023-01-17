@@ -1,0 +1,36 @@
+apiVersion: apps/v1             # API version
+kind: Deployment                # Type of kubernetes resource
+metadata:
+  name: front                   # Name of the kubernetes resource
+  labels:
+    app: front
+spec:
+  replicas: 1                   # No of replicas/pods to run
+  selector:                     
+    matchLabels:                # This deployment applies to Pods matching the specified labels
+      app: front
+  template:                     # Template for creating the Pods in this deployment
+    metadata:
+      labels:                   # Labels that will be applied to all the Pods in this deployment
+        app: front
+    spec:                       # Spec for the containers that will run inside the Pods
+      containers:
+      - name: front
+        image: fatmaguidara/front
+        imagePullPolicy: IfNotPresent
+
+        env:
+        - name: FRONT-PORT
+          valueFrom:
+            configMapKeyRef:
+              name: front-config
+              key: port
+
+        ports:
+          - name: http
+            containerPort: 80   # Should match the Port that the container listens on
+        resources:
+          limits:
+            cpu: 0.2
+            memory: "200Mi"
+---

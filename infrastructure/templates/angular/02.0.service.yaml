@@ -1,0 +1,12 @@
+apiVersion: v1                  # API version
+kind: Service                   # Type of kubernetes resource
+metadata:
+  name: front-service      # Name of the kubernetes resource
+spec:
+  type: LoadBalancer                 # Exposes the service by opening a port on each node
+  selector:
+    app: front     # Any Pod matching the label `app=evax-frontend` will be picked up by this service
+  ports:                        # Forward incoming connections on port 80 to the target port 80 in the Pod
+  - protocol: TCP
+    port: 3333
+    targetPort: 80

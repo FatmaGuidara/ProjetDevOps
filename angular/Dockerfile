@@ -22,11 +22,33 @@
 
 # # Start the application
 # CMD ["npm", "start"]
-FROM node:latest as node
-WORKDIR /app
-COPY . .
+
+# # ------
+# FROM node:latest as node
+# WORKDIR /app
+# COPY . .
+# RUN npm install
+# RUN npm run build
+# FROM nginx:alpine
+# COPY --from=node /app/dist/ecommerce-angular /usr/share/nginx/html
+# EXPOSE 4200
+
+FROM node:16.13.1 as build
+
+WORKDIR /usr/src/app
+
+COPY package*.json ./
+
 RUN npm install
-RUN npm run build --prod
-FROM nginx:alpine
-COPY --from=node /app/dist/ecommerce-angular /usr/share/nginx/html
-EXPOSE 4200
+
+COPY . .
+
+RUN npm run build
+
+FROM nginx:latest
+
+# COPY nginx.conf /etc/nginx/nginx.conf
+
+COPY --from=build /usr/src/app/dist/ecommerce-angular /usr/share/nginx/html
+
+EXPOSE 80
