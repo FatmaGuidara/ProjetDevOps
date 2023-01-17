@@ -6,4 +6,5 @@ api/prometheus-2.41.0.linux-amd64
 api/grafana-9.3.2
 terraform/first-stack/.terraform*
 terraform/second-stack/.terraform*
+terraform/second-1-stack
 terraform/third-stack/.terraform*

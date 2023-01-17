@@ -6,14 +6,11 @@ terraform {
     }
     helm = {
       source = "hashicorp/helm"
-
     }
   }
-
 }
 
 locals {
-
   kube_config            = data.terraform_remote_state.aks.outputs.kube_config.0
   host                   = local.kube_config.host
   username               = local.kube_config.username
@@ -43,5 +40,4 @@ provider "helm" {
     client_key             = local.client_key
     cluster_ca_certificate = local.cluster_ca_certificate
   }
-
 }
